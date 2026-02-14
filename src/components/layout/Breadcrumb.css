@@ -1,0 +1,40 @@
+.sidebar-breadcrumb {
+  padding: 0 1.5rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
+  color: #8898aa;
+}
+
+.breadcrumb-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+}
+
+.breadcrumb-item:not(:last-child)::after {
+  content: "/";
+  margin: 0 0.5rem;
+  color: #ced4da;
+}
+
+.breadcrumb-item a {
+  color: #ced4da;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.breadcrumb-item a:hover {
+  color: #fff;
+}
+
+.breadcrumb-item.active {
+  color: #fff;
+  font-weight: 500;
+}

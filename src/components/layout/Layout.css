@@ -10,6 +10,11 @@
     display: flex;
     flex-direction: column;
     background-color: var(--background-color);
+    transition: margin-left var(--transition-fast);
+}
+
+.app-layout.collapsed .main-content {
+    margin-left: 80px;
 }
 
 .page-content {
